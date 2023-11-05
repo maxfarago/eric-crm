@@ -1,0 +1,19 @@
+org: mfarago
+app: eric-crm
+service: eric-crm
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  cronHandler:
+    handler: handler.run
+    events:
+      # Invoke Lambda function every day at 9am
+      - schedule: cron(0 9 * * MON-FRI *)
+
+plugins:
+  - serverless-offline

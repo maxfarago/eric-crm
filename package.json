@@ -1,0 +1,10 @@
+{
+  "name": "eric-crm",
+  "version": "0.1.0",
+  "description": "A suite of scheduled jobs connected to Eric CRM DB",
+  "author": "Max Farago",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^13.2.0"
+  }
+}
